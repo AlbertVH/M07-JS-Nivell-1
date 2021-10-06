@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer07-5</title>
+</head>
+<body>
+    <p></p>
+    <h2>EXAMENES FINALES</h2>
+    <p></p>
+    <script>
+        var nota = prompt("Introduce la nota (del 0 al 10)");
+        if (nota<0 || nota>10){
+            alert("Número no válido. Debe ser entre 0 y 10. Reinicia la página e inténtalo de nuevo");
+        } else  if (nota<5){
+            alert("Ohhh, has suspendido el examen con un " + nota);
+        } else if (nota<=10){
+            alert("Felicidades, has aprobado con un " + nota);
+        }
+    </script>
+</body>
+</html>

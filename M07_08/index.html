@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer07-8</title>
+</head>
+<body>
+    <p></p>
+    <h2>CALCULADORA</h2>
+    <p></p>
+    <script>
+        // Definir funcio
+        var resultado=0;
+        function calculadora(operador, valor1, valor2){
+            if (operador=="+"){
+                resultado=valor1+valor2;
+            } 
+            else if(operador=="-"){
+                resultado=valor1-valor2;
+            }
+            else if(operador=="*"){
+                resultado=valor1*valor2;
+            }
+            else{
+                document.write("El operador introducido no es correcto. Por favor, repite. ");
+            }
+        }
+
+        // Demanar dades
+        var operador, valor1, valor2;
+        document.write("Bienvenid@ a la calculadora" + "<p></p>");
+        valor1=parseInt(prompt("Introduce el primer número"));
+        valor2=parseInt(prompt("Introduce el segundo número"));
+        operador=prompt("Introduce operador (+, -, *)");
+        
+        // Operar i mostrar resultat
+        calculadora(operador, valor1, valor2);
+        document.write("El resultado es: " + resultado);
+    </script>
+</body>
+</html>
